@@ -144,7 +144,9 @@
       img{position: absolute;inset:0;}
     }
     .split__content{padding: $spacing*2; align-content: center; justify-items: center; background: inherit; }
-    .split__content__wrapper{max-width: var(--container-mw);}
+    .split__content__wrapper{max-width: var(--container-mw);
+      .firefox &{margin: auto;}
+    }
     @include media-max($split-breakpoint){
       .split__content{order:1;}
     }
