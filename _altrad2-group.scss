@@ -158,6 +158,25 @@
       &:not([class*=bg-]){--bg-opacity: 0.5; background: rgba(body(block-background), var(--bg-opacity));}
     }
   }
+
+  &.section{min-height: 100vh; min-height: calc(100vh - var(--slides-padding-top,0px)); display: grid; align-content: center;}
 }
 
 .reader__map{z-index: 99;}
+
+
+
+.newslist--descheight{
+  .news_latest{
+    .block-card__figure{object-fit: contain; margin-top: auto; }
+    &:nth-child(1){
+      .block-card__figure{height: 400px;}
+    }
+    &:nth-child(2){
+      .block-card__figure{height: 320px; margin-top: 80px;}
+    }
+    &:nth-child(3){
+      .block-card__figure{height: 240px; margin-top: 160px;}
+    }
+  }
+}
